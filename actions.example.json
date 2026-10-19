@@ -1,0 +1,35 @@
+{
+  "open_calculator": {
+    "description": "Open the calculator",
+    "confirm": false,
+    "command": {
+      "windows": ["calc.exe"],
+      "mac": ["open", "-a", "Calculator"],
+      "linux": ["gnome-calculator"]
+    }
+  },
+  "open_vscode": {
+    "description": "Open Visual Studio Code",
+    "confirm": false,
+    "command": {
+      "windows": ["code"],
+      "mac": ["open", "-a", "Visual Studio Code"],
+      "linux": ["code"]
+    }
+  },
+  "open_classroom": {
+    "description": "Open Google Classroom in the browser",
+    "confirm": false,
+    "url": "https://classroom.google.com"
+  },
+  "set_volume": {
+    "description": "Set the system volume",
+    "confirm": true,
+    "params": { "level": { "min": 0, "max": 100 } },
+    "wait": true,
+    "command": {
+      "mac": ["osascript", "-e", "set volume output volume {level}"],
+      "linux": ["amixer", "-q", "sset", "Master", "{level}%"]
+    }
+  }
+}

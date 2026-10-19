@@ -1,0 +1,9 @@
+# Voice mode (python jarvis.py --voice). Install with: pip install -r requirements-voice.txt
+numpy
+sounddevice
+faster-whisper>=1.0.0
+pyttsx3
+
+# Optional, only for the "hey jarvis" wake word (python jarvis.py --voice --wake):
+#   pip install "openwakeword>=0.6.0"
+# Linux needs system libraries first:  sudo apt install libportaudio2 espeak-ng

@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.db
+*.db-*
+credentials.json
+token.json
+actions.json
+projects.json
